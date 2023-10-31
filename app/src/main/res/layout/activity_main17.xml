@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/base_background"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/pag"
+        android:layout_width="43dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/svge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon2"
+        app:layout_constraintEnd_toEndOf="@id/meow"
+        app:layout_constraintStart_toStartOf="@id/meow"
+        app:layout_constraintTop_toBottomOf="@id/meow"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="53dp" />
+
+    <TextView
+        android:id="@+id/meow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Profile"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.007" />
+
+    <TextView
+        android:id="@+id/wewe"
+
+        android:layout_width="324dp"
+        android:layout_height="32dp"
+        android:fontFamily="@font/roboto"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.254"
+        app:layout_constraintStart_toStartOf="@id/pag"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.095" />
+
+    <TextView
+        android:id="@+id/wewe1"
+        android:layout_width="329dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/roboto"
+        android:text="Email"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="@id/wewe"
+        app:layout_constraintTop_toBottomOf="@id/wewe" />
+
+    <TextView
+        android:id="@+id/wewe2"
+        android:layout_width="329dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="68dp"
+        android:fontFamily="@font/roboto"
+        android:text="Date Of Birth"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="@id/wewe1"
+        app:layout_constraintTop_toBottomOf="@id/wewe1" />
+
+    <TextView
+        android:id="@+id/wewe3"
+        android:layout_width="329dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="68dp"
+        android:fontFamily="@font/roboto"
+        android:text="Phone Number"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="@id/wewe2"
+        app:layout_constraintTop_toBottomOf="@id/wewe2" />
+
+    <TextView
+        android:id="@+id/wewe4"
+        android:layout_width="329dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/roboto"
+        android:text="Student Id"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="@id/wewe3"
+        app:layout_constraintTop_toBottomOf="@id/wewe3" />
+
+    <TextView
+        android:id="@+id/wewe5"
+        android:layout_width="329dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/roboto"
+        android:text="Student Id"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="@id/wewe4"
+        app:layout_constraintTop_toBottomOf="@id/wewe4" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/passwordc"
+        android:layout_width="312dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="8dp"
+
+        android:background="@drawable/base_round"
+        app:layout_constraintEnd_toEndOf="@id/wewe"
+        app:layout_constraintStart_toStartOf="@id/wewe"
+        app:layout_constraintTop_toBottomOf="@id/wewe"></com.google.android.material.textfield.TextInputEditText>
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/passwordcc"
+        android:layout_width="312dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="12dp"
+
+        android:background="@drawable/base_round"
+        app:layout_constraintEnd_toEndOf="@id/wewe1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/wewe1"
+        app:layout_constraintTop_toBottomOf="@id/wewe1"></com.google.android.material.textfield.TextInputEditText>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/passwordccc"
+        android:layout_width="312dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="8dp"
+
+        android:background="@drawable/base_round"
+        app:layout_constraintEnd_toEndOf="@id/wewe2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/wewe2"
+        app:layout_constraintTop_toBottomOf="@id/wewe2"></com.google.android.material.textfield.TextInputEditText>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/passwordcccc"
+        android:layout_width="312dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="8dp"
+
+        android:background="@drawable/base_round"
+        app:layout_constraintEnd_toEndOf="@id/wewe3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/wewe3"
+        app:layout_constraintTop_toBottomOf="@id/wewe3"></com.google.android.material.textfield.TextInputEditText>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/passwordccccc"
+        android:layout_width="312dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="8dp"
+
+        android:background="@drawable/base_round"
+        app:layout_constraintEnd_toEndOf="@id/wewe4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/wewe4"
+        app:layout_constraintTop_toBottomOf="@id/wewe4"></com.google.android.material.textfield.TextInputEditText>
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/passwordccccccc"
+        android:layout_width="92dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/base_round"
+        android:text="male"
+        app:layout_constraintEnd_toEndOf="@id/wewe4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/wewe4"
+        app:layout_constraintTop_toBottomOf="@id/wewe4"></androidx.appcompat.widget.AppCompatCheckBox>
+
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/passwordcccccc"
+        android:layout_width="92dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/base_round"
+        android:text="femaile"
+        app:layout_constraintEnd_toEndOf="@id/wewe4"
+        app:layout_constraintHorizontal_bias="0.624"
+        app:layout_constraintStart_toStartOf="@id/wewe4"
+        app:layout_constraintTop_toBottomOf="@id/wewe4"></androidx.appcompat.widget.AppCompatCheckBox>
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="312dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="548dp"
+        android:background="@drawable/buttonsuperior"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Update Profile"
+        android:textColor="@color/white"
+        android:textSize="19dp"
+        app:layout_constraintEnd_toEndOf="@id/meow"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/wewe"
+        app:layout_constraintTop_toBottomOf="@id/wewe"></androidx.appcompat.widget.AppCompatButton>
+
+
+    <FrameLayout
+        android:layout_width="303dp"
+        android:layout_height="272dp"
+        android:background="@drawable/base_round"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            >
+
+            <ImageView
+                android:id="@+id/nocap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.3"></ImageView>
+
+            <TextView
+                android:id="@+id/fae"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Update success"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/nocap"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="profile has been updated"
+                android:textColor="#64748B"
+                android:textSize="13dp"
+                app:layout_constraintEnd_toEndOf="@id/fae"
+                app:layout_constraintStart_toStartOf="@id/fae"
+                app:layout_constraintTop_toBottomOf="@id/fae"></TextView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/base_round2"
+                android:text="close"
+                android:textColor="#52B6DF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintStart_toStartOf="parent"
+
+                ></androidx.appcompat.widget.AppCompatButton>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

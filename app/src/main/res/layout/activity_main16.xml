@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/base_background"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/pag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/svge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+    <TextView
+        android:id="@+id/meow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Account"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.034" />
+
+    <TextView
+        android:id="@+id/wewe"
+
+        android:layout_width="324dp"
+        android:layout_height="32dp"
+
+        android:fontFamily="@font/roboto"
+        android:text="New Password"
+        android:textColor="@color/black"
+        android:textSize="19dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.389"
+        app:layout_constraintStart_toStartOf="@id/pag"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.158" />
+
+    <TextView
+        android:id="@+id/wewe1"
+        android:layout_width="329dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/roboto"
+        android:text="Confirm Password"
+        android:textColor="@color/black"
+        android:textSize="19dp"
+        app:layout_constraintStart_toStartOf="@id/wewe"
+        app:layout_constraintTop_toBottomOf="@id/wewe" />
+
+    <TextView
+        android:id="@+id/wewe2"
+        android:layout_width="329dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/roboto"
+        android:text="Confirm Password"
+        android:textColor="@color/black"
+        android:textSize="19dp"
+        app:layout_constraintStart_toStartOf="@id/wewe1"
+        app:layout_constraintTop_toBottomOf="@id/wewe1" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/passwordc"
+        android:layout_width="312dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="12dp"
+
+        android:background="@drawable/base_round"
+        app:layout_constraintEnd_toEndOf="@id/wewe"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/wewe"
+        app:layout_constraintTop_toBottomOf="@id/wewe"></com.google.android.material.textfield.TextInputEditText>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/passwordcc"
+        android:layout_width="312dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="8dp"
+
+        android:background="@drawable/base_round"
+        app:layout_constraintEnd_toEndOf="@id/wewe1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/wewe1"
+        app:layout_constraintTop_toBottomOf="@id/wewe1"></com.google.android.material.textfield.TextInputEditText>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/passwordccc"
+        android:layout_width="312dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="28dp"
+
+        android:background="@drawable/base_round"
+        app:layout_constraintEnd_toEndOf="@id/wewe2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/wewe2"
+        app:layout_constraintTop_toBottomOf="@id/wewe2"></com.google.android.material.textfield.TextInputEditText>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="312dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="316dp"
+        android:background="@drawable/buttonsuperior"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Update Password"
+        android:textColor="@color/white"
+        android:textSize="19dp"
+        app:layout_constraintEnd_toEndOf="@id/meow"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/wewe"
+        app:layout_constraintTop_toBottomOf="@id/wewe"></androidx.appcompat.widget.AppCompatButton>
+
+
+    <FrameLayout
+        android:layout_width="303dp"
+        android:layout_height="272dp"
+        android:background="@drawable/base_round"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            >
+
+            <ImageView
+                android:id="@+id/nocap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.3"></ImageView>
+
+            <TextView
+                android:id="@+id/fae"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Password Updated"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/nocap"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="password has been changed"
+                android:textColor="#64748B"
+                android:textSize="13dp"
+                app:layout_constraintEnd_toEndOf="@id/fae"
+                app:layout_constraintStart_toStartOf="@id/fae"
+                app:layout_constraintTop_toBottomOf="@id/fae"></TextView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/base_round2"
+                android:text="close"
+                android:textColor="#52B6DF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintStart_toStartOf="parent"
+
+                ></androidx.appcompat.widget.AppCompatButton>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

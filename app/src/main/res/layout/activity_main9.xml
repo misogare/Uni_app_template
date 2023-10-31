@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/base_background"
+    tools:context=".BlankFragment4">
+
+    <TextView
+        android:id="@+id/wigo"
+        android:layout_width="115dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/poppins"
+        android:text="Categories"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toTopOf="@id/sam"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/sam"
+        android:layout_width="402dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/wigo"
+        app:layout_constraintTop_toBottomOf="@id/wigo"></androidx.recyclerview.widget.RecyclerView>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/categoryImageView"
+        android:layout_width="343dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/base_round1"
+        android:contentDescription="Category Image"
+        android:fontFamily="@font/poppins_semibold"
+        android:paddingLeft="17dp"
+        android:src="@drawable/logo_round"
+        android:text="search"
+        android:textColor="#C4C4C4"
+        app:layout_constraintEnd_toEndOf="@id/sam"
+        app:layout_constraintHorizontal_bias="0.067"
+
+        app:layout_constraintStart_toStartOf="@id/sam"
+        app:layout_constraintTop_toBottomOf="@id/sam"></com.google.android.material.textfield.TextInputEditText>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/sam1"
+        android:layout_width="386dp"
+        android:layout_height="517dp"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/wigo"
+        app:layout_constraintTop_toBottomOf="@id/categoryImageView"></androidx.recyclerview.widget.RecyclerView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

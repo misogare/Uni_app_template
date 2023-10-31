@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/base_background"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/pag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/svge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+    <TextView
+        android:id="@+id/meow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="About Us"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.034" />
+
+    <TextView
+        android:id="@+id/wag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="About Us?"
+        android:textSize="17dp"
+        app:layout_constraintStart_toStartOf="@id/pag"
+        app:layout_constraintTop_toBottomOf="@id/pag" />
+
+    <TextView
+        android:id="@+id/mingo"
+        android:layout_width="327dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="4dp"
+        android:fontFamily="@font/poppins"
+        android:text="Study is a  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus ut sagittis libero augue interdum. "
+        android:textSize="13dp"
+        app:layout_constraintStart_toStartOf="@id/wag"
+        app:layout_constraintTop_toBottomOf="@id/wag" />
+
+    <ImageView
+        android:id="@+id/laoe"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:src="@drawable/line"
+        app:layout_constraintStart_toStartOf="@id/pag"
+        app:layout_constraintTop_toBottomOf="@id/mingo"></ImageView>
+
+    <TextView
+        android:id="@+id/lel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Lorem Ipsum"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="@id/wag"
+        app:layout_constraintTop_toBottomOf="@id/laoe"></TextView>
+
+    <TextView
+        android:id="@+id/wer"
+        android:layout_width="327dp"
+        android:layout_height="66dp"
+        android:fontFamily="@font/poppins"
+        android:text="• Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus ut sagittis libero augue interdum. "
+        android:textAppearance="?android:attr/textAppearanceListItem"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="@id/lel"
+        app:layout_constraintTop_toBottomOf="@id/lel"></TextView>
+
+    <TextView
+        android:id="@+id/mer"
+        android:layout_width="327dp"
+        android:layout_height="66dp"
+        android:fontFamily="@font/poppins"
+        android:text="• Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus ut sagittis libero augue interdum. "
+        android:textSize="14dp"
+        android:textAppearance="?android:attr/textAppearanceListItem"
+        app:layout_constraintStart_toStartOf="@id/wer"
+        app:layout_constraintTop_toBottomOf="@id/wer"></TextView>
+
+    <TextView
+        android:layout_width="327dp"
+        android:layout_height="66dp"
+        android:fontFamily="@font/poppins"
+        android:textAppearance="?android:attr/textAppearanceListItem"
+        android:text="• Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus ut sagittis libero augue interdum. "
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="@id/mer"
+        app:layout_constraintTop_toBottomOf="@id/mer"></TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

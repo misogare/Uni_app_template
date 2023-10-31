@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/base_background">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="33dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/logo_round"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toTopOf="@id/omt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="MSV"
+        android:textSize="15dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <ImageView
+        android:id="@+id/omt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+
+        ></ImageView>
+
+    <ImageView
+        android:id="@+id/mager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toTopOf="@id/omte"
+        app:layout_constraintStart_toStartOf="@id/omt"
+        app:layout_constraintTop_toBottomOf="@id/omt"
+
+        app:layout_constraintVertical_bias="0.5"></ImageView>
+
+    <TextView
+        android:id="@+id/sadge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/poppins"
+        android:text="hello there"
+        android:textColor="#64748B"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@id/mager"
+        app:layout_constraintTop_toBottomOf="@id/omt"></TextView>
+
+    <TextView
+        android:id="@+id/sadge1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Name is this "
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        app:layout_constraintStart_toEndOf="@id/mager"
+        app:layout_constraintTop_toBottomOf="@id/sadge"></TextView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/svge"
+        app:layout_constraintBottom_toTopOf="@id/omte"
+        app:layout_constraintEnd_toEndOf="@id/omt"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toEndOf="@id/mager"
+        app:layout_constraintTop_toBottomOf="@id/omt"
+        app:layout_constraintVertical_bias="0.5"></ImageView>
+
+    <ImageView
+        android:id="@+id/omte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+
+        ></ImageView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/kr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/poppins"
+        android:text="Profile"
+        android:textColor="#0F172A"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="@id/omte"
+        app:layout_constraintTop_toTopOf="@id/omte"></androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/kr1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+
+        android:fontFamily="@font/poppins"
+        android:text="Account"
+        android:textColor="#0F172A"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="@id/omte"
+        app:layout_constraintTop_toBottomOf="@id/kr"></androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/kr2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+
+        android:fontFamily="@font/poppins"
+        android:text="Settings"
+        android:textColor="#0F172A"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="@id/omte"
+        app:layout_constraintTop_toBottomOf="@id/kr1"></androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/kr3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+
+        android:fontFamily="@font/poppins"
+        android:text="About"
+        android:textColor="#0F172A"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="@id/omte"
+        app:layout_constraintTop_toBottomOf="@id/kr2"></androidx.appcompat.widget.AppCompatButton>
+</androidx.constraintlayout.widget.ConstraintLayout>
